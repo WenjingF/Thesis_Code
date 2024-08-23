@@ -1,0 +1,118 @@
+Brief Introduction for the code:
+
+################################################################
+
+Figures 1-16, 23-29
+the others are shown in the Model's code
+
+#################################################################
+Models
+1. Design-based approach: SRS estimator
+a. simple random sampling
+
+Use the sample mean to predict the population mean.
+
+########################
+!!!!Plot: Visualized confidence intervals shown in the Figure ? in the paper.
+
+##################################################################
+b. Stratified sampling(SS)
+
+Use the HT estimator
+
+The comments in the code allow us to view the mean and standard error of the estimates for each layer in each iteration. 
+
+##################################################################
+c. Convenience sampling in one circular area
+
+SRS estimator to predict the population mean
+
+##################################################################
+d. Convenience sampling in two circular areas
+
+Sampling within two non-overlapping circular regions, SRS estimator
+
+##################################################################
+2. Model-assisted approach: 1)simple regression estimator
+a. SRS
+
+Fit a simple regression model using the logarithm of SWIR2 with AGB to get the auxiliary information.
+
+######################################
+2) Multiple regression estimator
+
+Fit a multiple regression model using all covariates with AGB.
+
+The comments in the code allow us to view the result in model selection process
+
+##################################################################
+Model-assisted approach: Separate estimator
+b. SS
+
+Set the simple linear regression model for each stratum separately
+Combine the estimates for the strata to obtain the overall population parameters.
+#########################################
+View the regression model, estimated slope, estimated mean and estimated variance for each stratum in one of the iterations as an example.
+
+##################################################################
+c. Convenience Sampling in 1 Area
+1) Simple regression estimator
+2) Multiple regression estimator
+
+A similar estimating process to the SRS.
+
+##################################################################
+d. Convenience Sampling in 2 areas
+1) Simple regression estimator
+2) Multiple regression estimator
+
+A similar estimating process to that in one sampling region.
+
+##################################################################
+Section 4 Model-based approach
+4.1 Simple Linear Regression Model (LM)
+
+Check whether the effect of categorical variables on the model is significant, using convenience samples
+
+#################################################################
+1) SRS
+
+In the comments, there are:
+Summary and residual plots of the model.
+The variogram for the model.
+#######################################
+LM with interaction
+Change the "initial_model_1" to "initial_model_2" in the comments to run the model with interaction.
+
+##################################################################
+2)SS
+LM / LM with interaction in the comments
+##################################################################
+3) Convenience Sampling in 1 area
+LM / LM with interaction in the comments
+##################################################################
+4) Convenience Sampling in 2 areas
+LM / LM with interaction in the comments
+##################################################################
+4.2 Generalized Regression Model(GLM)
+1) SRS
+GLM with interaction
+Change the "initial_model_7" to "initial_model_7_2" in the comments to run the model with interaction.
+
+The summary, residual plots of the model, and the variogram are in the comments.
+##################################################################
+2)SS
+##################################################################
+3) Convenience Sampling in 1 area
+##################################################################
+4) Convenience Sampling in 2 areas
+##################################################################
+4.3 Generalized Additive Model (GAM)
+The summary, residual plots of the model, and the variogram are in the comments.
+1) SRS
+##################################################################
+2) SS
+##################################################################
+3) Convenience Sampling in 1 area
+##################################################################
+4) Convenience Sampling in 2 areas
